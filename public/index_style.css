@@ -1,0 +1,85 @@
+  body {
+        font-family: Arial, sans-serif;
+
+        font-size: 16px;
+        height: 100%;
+      }
+      .hero {
+        background: url(../assets/img/2.png) center center/cover;
+        color: black;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      .hero p {
+        font-size: 1.5rem;
+      }
+      .btn-donate {
+        background-color: #dc3545;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      .btn-donate:hover {
+        background-color: #c82333;
+        text-decoration: none;
+      }
+      .card {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+      }
+      .btn {
+        background-color: #f03737;
+        color: white;
+      }
+      #about {
+        width: 100%;
+        margin-top: 30px;
+        
+      }
+      .dark-color {
+        background-color: #ecca9f;
+      }
+       .p-4:hover{
+        background-color: #ecca9f;
+       }
+       .blood-compatibility {
+    padding: 40px 20px;
+    background-color: #fbf5dd;
+}
+
+.table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #ecca9f;
+    color: white;
+    font-weight: bold;
+}
+
+.table tbody tr:hover {
+    background-color: #fbf5dd;
+}
+.flex{
+  display:flex;
+}

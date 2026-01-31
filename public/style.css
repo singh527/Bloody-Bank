@@ -1,0 +1,341 @@
+/* card designing */
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+* {
+    transition: all 0.3s ease-out;
+  }
+  .cardcontainer {
+    width: 100%;
+    margin-top: 30px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  h3 {
+    color: #262626;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color:#f03737;
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+  .card1 {
+    display: block;
+    border: none;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -16px;
+      right: -16px;
+      background: #f03737;
+      height: 32px;
+      width: 32px;
+      border-radius: 32px;
+      transform: scale(1);
+      transform-origin: 50% 40%;
+      transition: transform 0.70s ease-out;
+    }
+  
+    &:hover:before {
+      transform: scale(21);
+     
+    }
+  }
+  
+  .card1:hover {
+    transform: translateY(-10px);
+    p {
+      transition: all 0.3s ease-out;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    h3 {
+      transition: all 0.3s ease-out;
+      color: #ffffff;
+    }
+  }
+.brand-logo{
+  height: 10px;
+  width: 10px;
+}
+/* about section css */
+.about{
+  padding: 32px 24px;
+  margin: 20px 30px 20px 50px;
+   
+}
+.inline{
+  display:flex;
+  
+  
+}
+
+/* nearest camp css */
+#campResults {
+  display: none;
+  margin-top: 20px;
+}
+.camp-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.camp-card h5 {
+  color: #dc3545;
+}
+
+/* blood availability */
+.sec{
+  width: 40%;
+  margin-right: 100px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FBF5DD;
+    
+}
+.divider {
+  width: 20px;
+  height: auto;
+  border-left: thick double  #FBF5DD;/* Dashed vertical line */
+  margin: 0 15px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color:#ecca9f;
+  color: black;
+  padding: 20px 0px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footer-section {
+  margin: 10px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.footer-section p {
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+  color: #f03737;
+}
+
+.footer-section .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  
+}
+
+.footer-section .social-links a img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s ease;
+}
+
+.footer-section .social-links a img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+
+
+/* charity donation section */
+.donation-section {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  width: 100%;
+}
+
+.donation-section h2 {
+  color: #dc3545;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.donation-section p {
+  color: #6c757d;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.donation-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.donation-form label {
+  font-size: 1rem;
+  color: #343a40;
+}
+
+.donation-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.donate-btn {
+  background-color: #dc3545;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.donate-btn:hover {
+  background-color: #b02a37;
+}
+
+/* charity style */
+.charity{
+  margin: 20px;
+}
+
+/* be a hero */
+#hero-donation {
+  background: url(../assets/img/hero1.jpg) center center/cover;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.hero-content h2 {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin-bottom: 20px;
+}
+
+.payment-icon {
+  width: 80px;
+  height: 80px;
+  
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.payment-icon:hover {
+  transform: scale(1.1);
+}
+
+.qr-code-section {
+  margin-top: 30px;
+  
+}
+
+.qr-code {
+  width: 150px;
+  height: 150px;
+  border: 2px dashed #ff4b5c;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.scan-notice {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/*main*/
+  
